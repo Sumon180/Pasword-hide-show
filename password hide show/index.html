@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passward hide & show</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="password" id="passward"><br><br>
+        <input type="checkbox" onclick="mypass()"> Show passward
+    </form>
+
+    <script>
+
+        // let pass = document.getElementById("passward");
+        // function mypass(){
+        //     if(pass.type === "password"){
+        //         pass.type = "text";
+        //     }
+        //     else{
+        //         pass.type = "password";
+        //     }
+        // }
+
+        let pass = document.getElementById("passward");
+        const mypass =() => {
+            if(pass.type === "password"){
+                pass.type = "text";
+            }
+            else{
+                pass.type = "password";
+            }
+        };
+
+    </script>
+    
+</body>
+</html>
